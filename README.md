@@ -8,6 +8,8 @@ cd SENetworkAppManager
 
 PowerShell -ExecutionPolicy Bypass -File setup_senetworkappmanager.ps1
 
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+
 venv\Scripts\activate
 
 python split_audio.py
